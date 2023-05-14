@@ -1,0 +1,221 @@
+.top {
+  width: 100%;
+  margin-top: 3%;
+  position: relative;
+}
+
+.top .thumb {
+  width: 31.25%;
+  margin-left: 18.75%;
+}
+
+.top .info {
+  position: absolute;
+  left: 54.16667%;
+  top: 0%;
+}
+
+.top .grouper {
+  position: absolute;
+  left: 54.16667%;
+  bottom: 0;
+  width: 26.0416666667%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.top .grouper .list {
+  width: 20%;
+}
+
+.top .grouper .list a,
+.top .grouper .list a img {
+  width: 100%;
+  display: block;
+}
+
+.top .info p {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.top .info .code {
+  color: #AAAAAA;
+  font-size: 14px;
+}
+
+.top .info .name {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 1% 0 1%;
+}
+
+.top .info .price {
+  font-size: 42px;
+  font-weight: 600;
+  padding-bottom: 9%;
+}
+
+.top .info .other {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1560px) {
+  .top .info .code {
+    font-size: 12px;
+  }
+  .top .info .name {
+    font-size: 22px;
+  }
+  .top .info .price {
+    font-size: 34px;
+  }
+  .top .info .other {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .top .info .code {
+    font-size: 12px;
+  }
+  .top .info .name {
+    font-size: 18px;
+    padding: 0;
+  }
+  .top .info .price {
+    font-size: 24px;
+    padding-bottom: 5%;
+  }
+  .top .info .other {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .top .info .code {
+    font-size: 11px;
+  }
+  .top .info .name {
+    font-size: 16px;
+    padding: 0;
+  }
+  .top .info .price {
+    font-size: 22px;
+    padding-bottom: 5%;
+  }
+  .top .info .other {
+    font-size: 11px;
+  }
+}
+
+.app .liner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6% 0;
+}
+
+.app .liner .box {
+  width: 17.1875%;
+}
+
+.app .barcode {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.app .barcode img {
+  width: 100%;
+  display: block;
+  animation: barcode 2.7s 1.6s infinite;
+}
+.app .barcode .b2 {
+  position: absolute;
+  left: 99.2%;
+  top: 0;
+}
+@keyframes barcode {
+  from {
+    transform: translateX(0%) skewX(0deg)
+  }
+  30% {
+    transform: translateX(-10%) skewX(-10deg)
+  }
+  50% {
+    transform: translateX(-10%) skewX(0deg)
+  }
+  to {
+    transform: translateX(-10%) skewX(0deg)
+  }
+}
+
+.detail {
+  width: 100%;
+  padding: 0 23.95833334%;
+}
+
+.detail img {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 780px) {
+  .top {
+    margin-top: 0%;
+
+  }
+  .top .thumb {
+    width: 92.5925926%;
+    margin-left: 3.7037037%;
+  }
+  .top .info {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 2.5% 3.7037037% 5%;
+  }
+  .top .info .name {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 2% 0 1%;
+  }
+  .top .info .price {
+    font-size: 24px;
+    padding-bottom: 6%;
+  }
+  .top .info .other {
+    font-size: 13px;
+  }
+  .top .grouper {
+    width: 96.2962963%;
+    margin-left: 3.7037037%;
+    position: relative;
+    left: 0;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+  .top::-webkit-scrollbar {
+    display: block;
+    opacity: 1;
+  }
+  .top .grouper .list {
+    width: 24%;
+  }
+  .app .liner {
+    padding: 15% 0;
+  }
+  .app .liner .box {
+    width: 73%;
+  }
+  .app .barcode .b2 {
+    left: 99.78%;
+  }
+  .detail {
+    padding: 0 3.7037037%;
+  }
+}
